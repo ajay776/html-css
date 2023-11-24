@@ -22,7 +22,6 @@
         .navbar {
             background-color: rgb(24, 40, 40);
             opacity: 1;
-            align-items: center;
             height: 60px;
             top: 0px;
 
@@ -43,6 +42,35 @@
             right: 5px;
             /* border: 1px solid red; */
         }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: rgb(24, 40, 40);
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #f4f1f1;
+            padding: 8px 16px;
+            font-family: 'EB Garamond', serif;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: rgb(58, 155, 137);
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
     </style>
 
 
@@ -57,6 +85,15 @@
         <a class="login" type="button" href="">login</a>
     </div>
 
+
+    <div class="sidebar">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
 
 </body>
 
