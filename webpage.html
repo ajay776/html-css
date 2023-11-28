@@ -8,7 +8,7 @@
 
     <style>
         body {
-            background-color: rosybrown;
+            background-color: rgb(8, 49, 49);
             margin: 0;
             padding: 0;
         }
@@ -16,9 +16,10 @@
         .header1 {
             position: sticky;
             padding: 31px;
+            font-size: xx-large;
             text-align: center;
-            background-color: grey;
-            color: black;
+            background-color: rgb(37, 100, 100);
+            color: white;
 
         }
 
@@ -58,10 +59,14 @@
             list-style-type: none;
             text-align: left;
             float: right;
+
             background-color: cadetblue;
         }
 
         ul {
+            font-size: large;
+            color: white;
+            font-weight: bolder;
             list-style-type: none;
             /* height: 50pc; */
         }
@@ -83,9 +88,53 @@
             color: white;
             bottom: 0px;
             width: 100%;
-            background-color: rgb(104, 104, 104);
+            background-color: rgb(37, 100, 100);
+        }
+
+        .ads-img {
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .square {
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid black;
+            background-color: rgb(37, 100, 100);
+            height: 100px;
+            width: 85px;
+        }
+
+        .gallery {
+            background-color: aliceblue;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 100fr));
+            gap: 16px;
+        }
+
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left-sidebar,
+            .right-sidebar {
+                margin-top: 10px;
+                width: 100%;
+                padding: 0;
+            }
         }
     </style>
+
 </head>
 
 <body>
@@ -118,6 +167,46 @@
             <li>Tea</li>
             <li>Coca Cola</li>
         </ul>
+        <div class="break" style="height: 15px; background-color: rgb(8, 49, 49);"></div>
+        <div class="ads-img">
+            About Me
+            <div class="square">
+                Image
+            </div>
+            <p>Hi i'm jhon doe a software engineer at codiant (A Yash Technologies Company)</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <img src="/images/1.jpg" alt="Image 1">
+        <img src="/images/2.jpg" alt="Image 1">
+        <img src="/images/3.jpg" alt="Image 1">
+        <img src="/images/4.jpg" alt="Image 1">
+        <img src="/images/5.jpg" alt="Image 1">
+        <img src="/images/6.jpg" alt="Image 1">
+        <img src="/images/7.jpg" alt="Image 1">
+        <img src="/images/8.jpg" alt="Image 1">
+        <img src="/images/9.jpg" alt="Image 1">
+        <img src="/images/10.jpg" alt="Image 1">
+        <img src="/images/11.jpg" alt="Image 1">
+        <img src="/images/12.jpg" alt="Image 1">
+        <img src="/images/13.jpg" alt="Image 1">
+        <img src="/images/14.jpg" alt="Image 1">
+        <img src="/images/15.jpg" alt="Image 1">
+        <img src="/images/16.jpg" alt="Image 1">
+        <img src="/images/17.jpg" alt="Image 1">
+        <img src="/images/18.jpg" alt="Image 1">
+        <img src="/images/19.jpg" alt="Image 1">
+        <img src="/images/20.jpg" alt="Image 1">
+        <img src="/images/21.jpg" alt="Image 1">
+        <img src="/images/22.jpg" alt="Image 1">
+        <img src="/images/23.jpg" alt="Image 1">
+        <img src="/images/24.jpg" alt="Image 1">
+        <img src="/images/25.jpg" alt="Image 1">
+        <img src="/images/26.jpg" alt="Image 1">
+        <img src="/images/27.jpg" alt="Image 1">
+
+
 
     </div>
 
